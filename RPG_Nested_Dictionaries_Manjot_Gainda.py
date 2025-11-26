@@ -19,7 +19,7 @@ Characters = {                                     #A dictionary containing the 
 print("\n")
 for character in Characters:             #Loops through characters in the character dictionary
     data = Characters[character]         #Sets a variable to handle each individual character dictionary
-    if int(data["Strength"]) >= 100:     #If a characters strentgh is greater than 100, they are given
+    if int(data["Strength"]) >= 100:     #If a characters strength is greater than 100, they are given
         Strength = "pretty strong"       #a special attribute, otherwise they are labeled as weak
     else:
         Strength = "kind of weak"
@@ -70,7 +70,7 @@ Tiles = {
 for tile in Tiles:            #Loops through all tiles in the Tile dictionary
     data = Tiles[tile]        #Sets a variable to handle each individual tile in the dictionary
     print("You are on a", tile, "and", data["Info"],
-          "you may", data["Choice"])         #prints tile description
+          "you may", data["Choice"])         #prints tile description and available choices
 print("")
 
 for place in Locations:                            #Loops through the locations dictionary
@@ -113,3 +113,4 @@ for people in Inventory:                  #Loops through each individual charact
         data = Inventory[people][items]   #Loops through every item in a characters inventory and prints
         print("The", items, data["Description"], "with", data["Damage"], "damage and", data["Uses"], "uses")
     print("")
+
