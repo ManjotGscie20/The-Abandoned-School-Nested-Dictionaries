@@ -113,14 +113,3 @@ for people in Inventory:                  #Loops through each individual charact
         data = Inventory[people][items]   #Loops through every item in a characters inventory and prints
         print("The", items, data["Description"], "with", data["Damage"], "damage and", data["Uses"], "uses")
     print("")
-
-
-
-
-
-
-
-
-
-
-
