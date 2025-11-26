@@ -24,9 +24,9 @@ for character in Characters:             #Loops through characters in the charac
     else:
         Strength = "kind of weak"
         
-    print (character, "is", data["Relationship"])
-    print(character, data["Fun Facts"])                                   
-    print(character,"is ", Strength, "With a strength of", data["Strength"])
+    print (character, "is", data["Relationship"])  #Prints characters importance to the story
+    print(character, data["Fun Facts"])            #Prints any interesting facts about the character                       
+    print(character,"is ", Strength, "With a strength of", data["Strength"]) #Prints characters strength
     print("")
 
 Locations = {    #A dictionary that contains the 3 main locations in the game
@@ -113,6 +113,7 @@ for people in Inventory:                  #Loops through each individual charact
         data = Inventory[people][items]   #Loops through every item in a characters inventory and prints
         print("The", items, data["Description"], "with", data["Damage"], "damage and", data["Uses"], "uses")
     print("")
+
 
 
 
